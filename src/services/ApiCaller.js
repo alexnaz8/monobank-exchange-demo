@@ -22,5 +22,5 @@ class ApiCaller {
 export default ApiCaller;
 
 function imitateServer() {
-    return new Promise(resolve => setTimeout(resolve, 500));
+    return new Promise(resolve => setTimeout(resolve, 1500));
 }

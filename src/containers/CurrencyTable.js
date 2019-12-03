@@ -1,40 +1,27 @@
 import React, { Fragment, useState, useEffect } from "react";
-import * as currencyInfo from "currency-codes";
 import ApiCaller from "../services/ApiCaller";
-const CurrrencyTable = () => {
-    const [currenciesArray, setCurrensies] = useState([]);
+import RefreshDataButton from "../components/RefreshDataButton";
+import ExchangeRatesTable from "../components/ExchangeRatesTable";
+const CurrencyTable = () => {
+    const [currenciesArray, setCurrencies] = useState([]);
     const bankApi = new ApiCaller();
-    useEffect(() => {
+    const getCurrenciesData = () => {
         bankApi.getCurrenciesData().then(res => {
-            setCurrensies(res);
-        }, []);
-    });
-    const currenciesList =
-        currenciesArray.length > 0
-            ? currenciesArray
-                  .filter(item => !!item.rateSell)
-                  .map((item, index) => {
-                      const getCurrencyName = () => [
-                          currencyInfo.number(item.currencyCodeA).currency,
-                          currencyInfo.number(item.currencyCodeB).currency
-                      ];
-                      const [firstCurrecy, secondCurrecy] = getCurrencyName();
-                      const itemKey =
-                          item.currencyCodeA + item.currencyCodeB + index;
-                      return (
-                          <li key={itemKey}>
-                              currency pair: {firstCurrecy}/{secondCurrecy}{" "}
-                              {item.rateSell} / {item.rateBuy}
-                          </li>
-                      );
-                  })
-            : null;
+            setCurrencies(res);
+        });
+    };
+
+    useEffect(() => {
+        getCurrenciesData();
+    }, []);
+
     return (
         <Fragment>
             <h1>Currencies are HERE</h1>
-            <ul>{currenciesList}</ul>
+            <RefreshDataButton getCurrenciesData={getCurrenciesData} />
+            <ExchangeRatesTable currenciesArray={currenciesArray} />
         </Fragment>
     );
 };
 
-export default CurrrencyTable;
+export default CurrencyTable;
