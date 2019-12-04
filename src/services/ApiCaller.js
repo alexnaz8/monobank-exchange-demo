@@ -1,26 +1,15 @@
 import axios from "axios";
-import { dummyData } from "../constants/dummyData";
 class ApiCaller {
-    endpoints = "";
-    async getCurrenciesData() {
-        /*axios("https://api.monobank.ua/bank/currency").then(res =>
-      console.log(res)
-    );*/
-        //console.log("Response", responseExchangeRates);
-        await imitateServer();
-        console.log("hello");
-        const responseExchangeRates = dummyData;
-        return responseExchangeRates;
+    getCurrenciesData() {
+        return axios(process.env.REACT_APP_CURENCY_ENDPOINT)
+            .then(({data}) => data)
+            .catch(err => console.log("Error happened:", err));
     }
     getCurrenciesCallStatus() {
-        axios("https://api.monobank.ua/bank/currency")
+        axios(process.env.REACT_APP_CURENCY_ENDPOINT)
             .then(({ status }) => status)
             .catch(err => console.log(err));
     }
 }
 
 export default ApiCaller;
-
-function imitateServer() {
-    return new Promise(resolve => setTimeout(resolve, 1500));
-}
