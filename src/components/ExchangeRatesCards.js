@@ -14,16 +14,16 @@ const ExchangeRatesCards = ({ currenciesArray }) => {
                 >
                     <div className="xl:flex lg:items-center">
                         <img
-                            className="rounded-lg xl:w-32"
+                            className="rounded-lg w-full xl:w-32"
                             src="https://icon-library.net/images/currency-exchange-icon/currency-exchange-icon-9.jpg"
                             alt=""
                         />
                         <div className="mt-4 lg:mt-0">
-                            <div className="uppercase tracking-wide text-sm text-gray-600 font-bold">
-                                {firstCurrency}
-                                <span className="text-gray-100">
-                                    /{secondCurrency}
-                                </span>
+                            <div className="uppercase tracking-wide text-lg md:text-sm text-gray-600 font-bold">
+                                <p>{firstCurrency}</p>
+                                <p className="text-gray-100">
+                                    {secondCurrency}
+                                </p>
                             </div>
                             <span className="uppercase block mt-1 text-lg leading-tight font-semibold text-gray-900">
                                 sell {item.rateSell}
@@ -36,7 +36,7 @@ const ExchangeRatesCards = ({ currenciesArray }) => {
                 </div>
             );
         });
-    return <div className="sm:flex">{currenciesList}</div>;
+    return <div className="sm:flex sm:justify-around">{currenciesList}</div>;
 };
 
 export default ExchangeRatesCards;
