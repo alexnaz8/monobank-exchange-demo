@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/github.io/monobank-exchange-demo/static/css/main.7a413f47.chunk.css",
-    "main.js": "/github.io/monobank-exchange-demo/static/js/main.e2313370.chunk.js",
-    "main.js.map": "/github.io/monobank-exchange-demo/static/js/main.e2313370.chunk.js.map",
-    "runtime-main.js": "/github.io/monobank-exchange-demo/static/js/runtime-main.29524624.js",
-    "runtime-main.js.map": "/github.io/monobank-exchange-demo/static/js/runtime-main.29524624.js.map",
-    "static/js/2.059316bf.chunk.js": "/github.io/monobank-exchange-demo/static/js/2.059316bf.chunk.js",
-    "static/js/2.059316bf.chunk.js.map": "/github.io/monobank-exchange-demo/static/js/2.059316bf.chunk.js.map",
-    "index.html": "/github.io/monobank-exchange-demo/index.html",
-    "precache-manifest.c3aba3bad8195c30ba2c5836109d1eae.js": "/github.io/monobank-exchange-demo/precache-manifest.c3aba3bad8195c30ba2c5836109d1eae.js",
-    "service-worker.js": "/github.io/monobank-exchange-demo/service-worker.js",
-    "static/css/main.7a413f47.chunk.css.map": "/github.io/monobank-exchange-demo/static/css/main.7a413f47.chunk.css.map"
+    "main.css": "/monobank-exchange-demo/static/css/main.7a413f47.chunk.css",
+    "main.js": "/monobank-exchange-demo/static/js/main.e2313370.chunk.js",
+    "main.js.map": "/monobank-exchange-demo/static/js/main.e2313370.chunk.js.map",
+    "runtime-main.js": "/monobank-exchange-demo/static/js/runtime-main.efa825b2.js",
+    "runtime-main.js.map": "/monobank-exchange-demo/static/js/runtime-main.efa825b2.js.map",
+    "static/js/2.059316bf.chunk.js": "/monobank-exchange-demo/static/js/2.059316bf.chunk.js",
+    "static/js/2.059316bf.chunk.js.map": "/monobank-exchange-demo/static/js/2.059316bf.chunk.js.map",
+    "index.html": "/monobank-exchange-demo/index.html",
+    "precache-manifest.cecc836eba44039f886ee1578e9fe27a.js": "/monobank-exchange-demo/precache-manifest.cecc836eba44039f886ee1578e9fe27a.js",
+    "service-worker.js": "/monobank-exchange-demo/service-worker.js",
+    "static/css/main.7a413f47.chunk.css.map": "/monobank-exchange-demo/static/css/main.7a413f47.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.29524624.js",
+    "static/js/runtime-main.efa825b2.js",
     "static/js/2.059316bf.chunk.js",
     "static/css/main.7a413f47.chunk.css",
     "static/js/main.e2313370.chunk.js"
