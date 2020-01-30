@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ce37a630523e6f33e60342ce556c293",
+    "revision": "65631182b0608f9dfba7781027c55e75",
     "url": "/github.io/monobank-exchange-demo/index.html"
   },
   {
-    "revision": "ecb0b97a6c0a763b47db",
+    "revision": "a4d651613494eec32534",
     "url": "/github.io/monobank-exchange-demo/static/css/main.7a413f47.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github.io/monobank-exchange-demo/static/js/2.059316bf.chunk.js"
   },
   {
-    "revision": "ecb0b97a6c0a763b47db",
-    "url": "/github.io/monobank-exchange-demo/static/js/main.90e8fce1.chunk.js"
+    "revision": "a4d651613494eec32534",
+    "url": "/github.io/monobank-exchange-demo/static/js/main.e2313370.chunk.js"
   },
   {
     "revision": "4b37dc1c32a4bf150981",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/github.io/monobank-exchange-demo/precache-manifest.557ec48e62cf0bd6ae2cdc4af3a239ad.js"
+  "/github.io/monobank-exchange-demo/precache-manifest.c3aba3bad8195c30ba2c5836109d1eae.js"
 );
 
 self.addEventListener('message', (event) => {
