@@ -4,7 +4,7 @@
     "private": true,
     "homepage": "https://alexnaz8.github.io/monobank-exchange-demo",
     "dependencies": {
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "currency-codes": "^1.5.1",
         "gh-pages": "^2.2.0",
         "react": "^16.12.0",
